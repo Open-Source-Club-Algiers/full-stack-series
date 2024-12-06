@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require('express'); // Import Express
 const app = express(); // Create an Express application
 const taskRouter = require('./routes/task')
+const authRouter = require('./routes/auth')
 const mongoose = require('mongoose');
 
 
@@ -13,6 +14,8 @@ app.use(express.json());
 
 //task router
 app.use('/task', taskRouter);
+//auth router
+app.use('/auth', authRouter);
 
 // TODO:add authntication router 
 
