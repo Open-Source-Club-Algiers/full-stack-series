@@ -17,7 +17,7 @@ app.use('/task', taskRouter);
 //auth router
 app.use('/auth', authRouter);
 
-// TODO:add authntication router 
+
 
 
 
